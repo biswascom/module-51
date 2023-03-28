@@ -16,7 +16,7 @@ const Cart = ({cart}) => {
 
         totalPrice = totalPrice + product.price * product.quantity;
         totalShipping = totalShipping + product.shipping * product.quantity;
-        quantity = quantity + product.quantity * product.quantity;
+        quantity = quantity + product.quantity;
     };
 
     const tax = totalPrice * 7 / 100;
